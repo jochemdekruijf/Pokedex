@@ -17,6 +17,37 @@ public class Pokemon {
         this.attack = a;
     }
 
+    public int calcDamage(Pokemon p) {
+        int dmg;
+
+        if(this.type.getName().equals(p.weakness.getWeakTowardsType().getName())){
+            dmg = this.attack.getDamage() * p.weakness.getMultiplier();
+
+        } else if(this.type.getName().equals(p.resistance.getResistantTowardsType().getName())){
+            dmg = this.attack.getDamage() - p.resistance.getResistanceAmount();
+
+        }else {
+            dmg = this.attack.getDamage();
+        }
+
+        return dmg;
+    }
+
+    public void attackPokemon(Pokemon p){
+        int dmg = calcDamage(p);
+
+        if(dmg < p.getHp()){
+            int hp = p.getHp() - dmg;
+            p.setHp(hp);
+            System.out.println(this.name + " valt " + p.getName() + " aan met " + this.attack.getName() +
+                    " voor " + dmg + " schade en " + p.getName() +" heeft " + p.getHp() + " hp over");
+
+        }else {
+            System.out.println( p.getName() + " is verlagen");
+        }
+    }
+
+
     public String getName() {
         return name;
     }

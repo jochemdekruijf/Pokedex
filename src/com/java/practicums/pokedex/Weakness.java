@@ -2,11 +2,11 @@ package com.java.practicums.pokedex;
 
 public class Weakness {
     private Type type;
-    private double multiplier;
+    private int multiplier;
     private Type weakTowardsType;
 
 
-    public Weakness(Type tp, double mp, Type wTT) {
+    public Weakness(Type tp, int mp, Type wTT) {
         this.type = tp;
         this.multiplier = mp;
         this.weakTowardsType = wTT;
@@ -16,7 +16,7 @@ public class Weakness {
         return type;
     }
 
-    public double getMultiplier() {
+    public int getMultiplier() {
         return multiplier;
     }
 
@@ -28,7 +28,7 @@ public class Weakness {
         this.type = tp;
     }
 
-    public void setMultiplier(double mp) {
+    public void setMultiplier(int mp) {
         this.multiplier = mp;
     }
 
