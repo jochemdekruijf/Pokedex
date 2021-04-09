@@ -7,6 +7,14 @@ public class Type {
         this.name = nm;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String nm) {
+        this.name = nm;
+    }
+
     @Override
     public String toString() {
         return "" + name;

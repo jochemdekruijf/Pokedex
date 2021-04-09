@@ -23,6 +23,18 @@ public class Resistance {
         return resistantTowardsType;
     }
 
+    public void setType(Type tp) {
+        this.type = tp;
+    }
+
+    public void setResistanceAmount(int rA) {
+        this.resistanceAmount = rA;
+    }
+
+    public void setResistantTowardsType(Type rTT) {
+        this.resistantTowardsType = rTT;
+    }
+
     @Override
     public String toString() {
         return " is van type" + type + "en verminder schade met " + resistanceAmount

@@ -24,6 +24,18 @@ public class Weakness {
         return weakTowardsType;
     }
 
+    public void setType(Type tp) {
+        this.type = tp;
+    }
+
+    public void setMultiplier(double mp) {
+        this.multiplier = mp;
+    }
+
+    public void setWeakTowardsType(Type wTT) {
+        this.weakTowardsType = wTT;
+    }
+
     @Override
     public String toString() {
         return "Is van type" + type + "en heeft een multiplier van " + multiplier + "tegen " + weakTowardsType;
