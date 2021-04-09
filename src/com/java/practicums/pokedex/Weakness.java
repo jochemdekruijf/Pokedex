@@ -6,10 +6,10 @@ public class Weakness {
     private Type weakTowardsType;
 
 
-    public Weakness(Type type, double multiplier, Type weakTowardsType) {
-        this.type = type;
-        this.multiplier = multiplier;
-        this.weakTowardsType = weakTowardsType;
+    public Weakness(Type tp, double mp, Type wTT) {
+        this.type = tp;
+        this.multiplier = mp;
+        this.weakTowardsType = wTT;
     }
 
     public Type getType() {

@@ -5,10 +5,10 @@ public class Resistance {
     private int resistanceAmount;
     private Type resistantTowardsType;
 
-    public Resistance(Type type, int resistanceAmount, Type resistantTowardsType) {
-        this.type = type;
-        this.resistanceAmount = resistanceAmount;
-        this.resistantTowardsType = resistantTowardsType;
+    public Resistance(Type tp, int rA, Type rTT) {
+        this.type = tp;
+        this.resistanceAmount = rA;
+        this.resistantTowardsType = rTT;
     }
 
     public Type getType() {

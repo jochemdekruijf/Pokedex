@@ -7,8 +7,8 @@ public class Trainer {
     private String password;
     private ArrayList<Pokemon> pokemons = new ArrayList<>();
 
-    public Trainer(String naam) {
-        this.name = naam;
+    public Trainer(String nm) {
+        this.name = nm;
     }
 
     public void addPokemon(Pokemon p) {

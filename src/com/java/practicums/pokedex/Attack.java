@@ -4,9 +4,9 @@ public class Attack {
     private String name;
     private int damage;
 
-    public Attack(String naam, int damage) {
-        this.name = naam;
-        this.damage = damage;
+    public Attack(String nm, int dmg) {
+        this.name = nm;
+        this.damage = dmg;
     }
 
     public String getName() {
