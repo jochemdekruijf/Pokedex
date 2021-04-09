@@ -1,16 +1,16 @@
 package com.java.practicums.pokedex;
 
 public class Attack {
-    private String naam;
+    private String name;
     private int damage;
 
     public Attack(String naam, int damage) {
-        this.naam = naam;
+        this.name = naam;
         this.damage = damage;
     }
 
-    public String getNaam() {
-        return naam;
+    public String getName() {
+        return name;
     }
 
     public int getDamage() {
@@ -19,6 +19,6 @@ public class Attack {
 
     @Override
     public String toString() {
-        return "Pokemon heet" + naam + " en doet" + damage + "schade";
+        return "Pokemon heet" + name + " en doet" + damage + "schade";
     }
 }

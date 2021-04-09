@@ -19,11 +19,6 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        String str = "";
-        str += "Pokemon heet " + naam + " en heeft " + hp + " hp " + " is van type " + type + "\n";
-        str += "Pokemon is zwak tegen " + w.getWeakTowardsType() + "\n";
-        str += "Pokemon is resistent tegen " + r.getResistantTowardsType() + " met een vermindering van " + r.getResistanceAmount() + "\n";
-        str += "Pokemon heeft aanval " + a.getNaam() + " dat " + a.getDamage() + " schade doet \n";
-        return str;
+        return "" + naam;
     }
 }

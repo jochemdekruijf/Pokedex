@@ -1,14 +1,14 @@
 package com.java.practicums.pokedex;
 
 public class Type {
-    private String naam;
+    private String name;
 
     public Type(String naam) {
-        this.naam = naam;
+        this.name = naam;
     }
 
     @Override
     public String toString() {
-        return "" + naam;
+        return "" + name;
     }
 }
