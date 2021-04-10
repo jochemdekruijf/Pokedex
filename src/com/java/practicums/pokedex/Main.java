@@ -32,17 +32,11 @@ public class Main {
         Pokemon p3 = new Pokemon("Venusaur",160, t3, w3, r3, a3);
         Pokemon p4 = new Pokemon("Pikachu",100, t4, w4, r4, a4);
 
-        Trainer t = new Trainer("Ash");
+        Trainer t = new Trainer("Ash", "abche");
 
         t.addPokemon(p);
-        t.addPokemon(p);
-        t.addPokemon(p);
-
-//        p.attackPokemon(p2);
-//        p2.attackPokemon(p);
-//        p2.attackPokemon(p);
-
-        p4.attackPokemon(p);
-        p.attackPokemon(p4);
+        t.addPokemon(p2);
+        t.addPokemon(p3);
+        t.addPokemon(p4);
     }
 }

@@ -7,8 +7,9 @@ public class Trainer {
     private String password;
     private ArrayList<Pokemon> pokemons = new ArrayList<>();
 
-    public Trainer(String nm) {
+    public Trainer(String nm, String pw) {
         this.name = nm;
+        this.password = pw;
     }
 
     public void addPokemon(Pokemon p) {
@@ -17,7 +18,7 @@ public class Trainer {
 
     @Override
     public String toString() {
-        String str = "Trainer " + name + "heeft de volgende pokemons " + pokemons;
+        String str = "Trainer " + name + " heeft de volgende pokemons: ";
         for (Pokemon p : pokemons) {
             str += "\n" + p;
         }

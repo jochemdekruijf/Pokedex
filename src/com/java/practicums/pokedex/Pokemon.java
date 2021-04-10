@@ -1,5 +1,7 @@
 package com.java.practicums.pokedex;
 
+import java.util.Locale;
+
 public class Pokemon {
     private String name;
     private int hp;
@@ -7,6 +9,8 @@ public class Pokemon {
     private Weakness weakness;
     private Resistance resistance;
     private Attack attack;
+    private String imgFront;
+    private String imgBack;
 
     public Pokemon(String nm, int hp, Type tp, Weakness w, Resistance r, Attack a) {
         this.name = nm;
@@ -15,6 +19,8 @@ public class Pokemon {
         this.weakness = w;
         this.resistance = r;
         this.attack = a;
+        this.imgFront = name.toLowerCase() + ".gif";
+        this.imgBack= name.toLowerCase() + "-back.gif";
     }
 
     public int calcDamage(Pokemon p) {
