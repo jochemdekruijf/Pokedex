@@ -1,0 +1,41 @@
+.container {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.flex-item {
+    margin: 10px;
+    /*background-color: gray;*/
+    /*opacity: 75%;*/
+    width: 200px;
+    height: 200px;
+}
+
+.flex-item img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.edit{
+    width: 80px;
+    height: 30px;
+    background-color: green;
+}
+
+.del{
+    width: 80px;
+    height: 30px;
+    background-color: red;
+}
+
+.button-div{
+    opacity: 100%;
+    margin: 0 auto;
+    width: inherit;
+    height: 30px;
+}

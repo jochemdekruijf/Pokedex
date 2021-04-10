@@ -49,7 +49,7 @@ public class Pokemon {
                     " voor " + dmg + " schade en " + p.getName() +" heeft " + p.getHp() + " hp over");
 
         }else {
-            System.out.println( p.getName() + " is verlagen");
+            System.out.println( p.getName() + " is verslagen");
         }
     }
 
